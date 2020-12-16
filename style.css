@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    background: #674bb1;
+    position: relative;
+}
+
+.bg-container{
+    width: 100%;
+    height: 100%;
+    background: url(./images/bg-desktop.svg);
+}
+.logo{
+    padding:  2rem;
+    width: 300px;
+}
+.content{
+    display: flex;
+    padding:3rem;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.content-details{
+    color: #fff;
+    margin-top: 3rem;
+}
+.content-details p{
+    margin: 2rem 0;
+    color: rgba(255, 255, 255, 0.493);
+}
+.content h1{
+    font-size: 3rem;
+    line-height: 3rem;
+}
+
+.btn{
+    border: none;
+    outline: none;
+    background: #e980e7;
+    cursor: pointer;
+    padding: .75rem 3rem;
+    border-radius: 3rem;
+}
+
+.icons{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    transform: translate(-5%,-5%);
+    color: white;
+    
+}
+
+.icons i{
+    font-size: 1.5rem;
+    margin:0 1rem;
+    border-radius: 50%;
+    position: relative;
+    z-index: 10;
+    padding: 1rem;
+    border: 3px solid #fff;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.icons i:hover{
+    border-color:#e980e7; 
+}
+img{
+    width: 100%;
+}
+footer{
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    
+}
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(0, 0%, 100%);
+        font-weight: bold;
+     }
+@media only screen and (max-width: 600px) {
+    .content{
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+    .logo{
+        width: 200px;
+        padding: 1.5rem 2rem;
+    }
+    .content-details{
+        text-align: center;
+    }
+    .content-details h1{
+        font-size: 1.5rem;
+        line-height: unset;
+    }
+    .icons{
+        bottom: 5px;
+        right: 5px;
+        transform: translate(-5px,-5px);
+    }
+    .icons i{
+        font-size: .75rem;
+        padding: .5rem;
+    }
+    section{
+        background-image: url(./images/bg-mobile.svg);
+    }
+    footer{
+        display: none;
+    }
+  }
